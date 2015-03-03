@@ -1,7 +1,7 @@
 .hs_container{
 	position:relative;
-	width:500px;
-	height:500px;
+	width:300px;
+	height:300px;
 	overflow:hidden;
 	clear:both;
 	cursor:pointer;
@@ -21,32 +21,26 @@
 	z-index:9999;
 }
 .hs_area1{
-	width:250px;
-	height:250px;
+	width:150px;
+	height:150px;
 	top:0px;
 	left:0px;
 }
 .hs_area2{
-	width:250px;
-	height:250px;
+	width:150px;
+	height:150px;
 	top:0px;
-	left:250px;
+	left:150px;
 }
 .hs_area3{
-	width:250px;
-	height:250px;
-	top:250px;
-	left:250px;
+	width:150px;
+	height:150px;
+	top:150px;
+	left:150px;
 }
 .hs_area4{
-	width:250px;
-	height:250px;
-	top:250px;
+	width:150px;
+	height:150px;
+	top:150px;
 	left:0px;
-}
-.hs_area5{
-	width:708px;
-	height:135px;
-	top:334px;
-	left:194px;
 }
