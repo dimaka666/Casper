@@ -1,0 +1,46 @@
+.hs_container{
+	position:relative;
+	width:300px;
+	height:300px;
+	overflow:hidden;
+	clear:both;
+	cursor:pointer;
+}
+.hs_container .hs_area{
+	position:absolute;
+	overflow:hidden;
+}
+.hs_area img{
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.hs_area img.hs_visible{
+	display:block;
+	z-index:9999;
+}
+.hs_area1{
+	width:150px;
+	height:150px;
+	top:0px;
+	left:0px;
+}
+.hs_area2{
+	width:150px;
+	height:150px;
+	top:0px;
+	left:150px;
+}
+.hs_area3{
+	width:150px;
+	height:150px;
+	top:150px;
+	left:150px;
+}
+.hs_area4{
+	width:150px;
+	height:150px;
+	top:150px;
+	left:0px;
+}
