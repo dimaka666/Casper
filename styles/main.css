@@ -37,9 +37,9 @@ footer, header, hgroup, menu, nav, section {
 /* Nav */
 #collections {
   width:100%;
-  position: fixed;
-  padding-left:1px;
-  padding-right:1px;
+  position: absolute;
+  right:0;
+  left:0;
   text-align: center;
 top: 70%;
 transform: translateY(-50%);
@@ -71,8 +71,6 @@ opacity: 0.6;
 }
 
 .box img {
-  width:150px;
-  height: 150px;
   display:inline;
 }
 .sliderWrapper {
