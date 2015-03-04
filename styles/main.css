@@ -214,3 +214,37 @@ transform: translateX(-24%);
   -ms-interpolation-mode: bicubic;
   display: block;
 }
+
+#labelWrapper div{
+  opacity:0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:17%;
+}
+#labelWrapper {
+  text-align:center;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#labelWrapper h1 {
+  font-size:50px
+}
+.sliding-middle-out {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+  width: 100%;
+  background: blue;
+}

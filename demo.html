@@ -44,26 +44,43 @@
 				);
 				});
 		</script>
+		<script language="javascript" type="text/javascript">
+		$(function() {
+		$('#collections > .box').on('mouseenter', function () {
+			$("#AlbumLabel h1").text(this.id);
+				$("#AlbumLabel").stop().animate({
+					'opacity':'1',
+				},200);
+				});
+		$('#collections > .box').on('mouseleave', function () {
+			$("#AlbumLabel").stop().animate({
+				'opacity':'0',
+			},200);
+		});
+	}
+);
+		</script>
 	</head>
 	<body>
 		<div id="loading">
 			<div id="loadingWrapper">
-			<img id="loading-image" src="images/loading.gif" alt="Loading..." />
-		</div>
+				<img id="loading-image" src="images/loading.gif" alt="Loading..." />
+			</div>
 		</div>
 
 		<div id="wrapper">
-
 			<header>
 			</header>
-<main>
-	<div id="logo">
-		<img class="img-responsive" src="images/BulanovText.png" style="height:70px"/>
-		</div>
+			<main>
+				<div id="logo">
+					<img class="img-responsive" src="images/BulanovText.png" style="height:70px"/>
+				</div>
+				<div id="labelWrapper">
+					<div id="AlbumLabel"><h1 class="sliding-middle-out"></h1></div>
+				</div>
 
 				<div id="collections">
-						<div id="box1" class="box">
-							<!--<h1 class="chr">Characters Here</h1>-->
+						<div id="Imagenarium" class="box">
 							<a href="#" title="Home">
 								<div id="hs_container" class="hs_container">
 									<div class="hs_area hs_area1">
@@ -74,11 +91,13 @@
 									<div class="hs_area hs_area2">
 										<img class="hs_visible img-responsive" src="images/album-1/area2/1.jpg">
 										<img class="img-responsive" src="images/album-1/area2/2.jpg">
-										<img class="img-responsive" src="images/album-1/area2/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-1/area2/3.jpg">
+									</div>
 									<div class="hs_area hs_area3">
 										<img class="hs_visible img-responsive" class="hs_visible img-responsive" src="images/album-1/area3/1.jpg">
 										<img class="img-responsive" src="images/album-1/area3/2.jpg">
-										<img class="img-responsive" src="images/album-1/area3/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-1/area3/3.jpg">
+									</div>
 									<div class="hs_area hs_area4">
 										<img class="hs_visible img-responsive" src="images/album-1/area4/1.jpg">
 										<img class="img-responsive" src="images/album-1/area4/2.jpg">
@@ -87,103 +106,112 @@
 								</div>
 							</a>
 						</div>
-						<div id="box2" class="box">
-							<!--<h1 style="text-align:center; margin-left:194px;" class="wed">Wedding</h1>-->
+						<div id="Reportage" class="box">
 							<a href="#" title="Home">
 								<div id="1hs_container" class="hs_container">
 									<div class="hs_area hs_area1">
 										<img class="hs_visible img-responsive" src="images/album-2/area1/1.jpg">
 										<img class="img-responsive" src="images/album-2/area1/2.jpg">
-										<img class="img-responsive" src="images/album-2/area1/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-2/area1/3.jpg">
+									</div>
 									<div class="hs_area hs_area2">
 										<img class="hs_visible img-responsive" src="images/album-2/area2/1.jpg">
 										<img class="img-responsive" src="images/album-2/area2/2.jpg">
-										<img class="img-responsive" src="images/album-2/area2/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-2/area2/3.jpg">
+									</div>
 									<div class="hs_area hs_area3">
 										<img class="hs_visible img-responsive" src="images/album-2/area3/1.jpg">
 										<img class="img-responsive" src="images/album-2/area3/2.jpg">
-										<img class="img-responsive" src="images/album-2/area3/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-2/area3/3.jpg">
+									</div>
 									<div class="hs_area hs_area4">
 										<img class="hs_visible img-responsive" src="images/album-2/area4/1.jpg">
 										<img class="img-responsive" src="images/album-2/area4/2.jpg">
-										<img class="img-responsive" src="images/album-2/area4/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-2/area4/3.jpg">
+									</div>
 								</div>
 							</a>
 						</div>
-						<div id="box3" class="box">
-							<!--<h1 style="text-align:right;margin-left:345px;" class="ima">Imaginarium</h1>-->
+						<div id="Wedding" class="box">
 							<a href="#" title="Home">
 								<div id="2hs_container" class="hs_container">
 									<div class="hs_area hs_area1">
 										<img class="hs_visible img-responsive" src="images/album-3/area1/1.jpg">
 										<img class="img-responsive" src="images/album-3/area1/2.jpg">
-										<img class="img-responsive" src="images/album-3/area1/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-3/area1/3.jpg">
+									</div>
 									<div class="hs_area hs_area2">
 										<img class="hs_visible img-responsive" src="images/album-3/area2/1.jpg">
 										<img class="img-responsive" src="images/album-3/area2/2.jpg">
-										<img class="img-responsive" src="images/album-3/area2/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-3/area2/3.jpg">
+									</div>
 									<div class="hs_area hs_area3">
 										<img class="hs_visible img-responsive" src="images/album-3/area3/1.jpg">
 										<img class="img-responsive" src="images/album-3/area3/2.jpg">
-										<img class="img-responsive" src="images/album-3/area3/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-3/area3/3.jpg">
+									</div>
 									<div class="hs_area hs_area4">
 										<img class="hs_visible img-responsive" src="images/album-3/area4/1.jpg">
 										<img class="img-responsive" src="images/album-3/area4/2.jpg">
-										<img class="img-responsive" src="images/album-3/area4/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-3/area4/3.jpg">
+									</div>
 								</div>
 							</a>
 						</div>
-						<div id="box3" class="box">
-							<!--<h1 style="text-align:right;margin-left:345px;" class="ima">Album4</h1>-->
+						<div id="Characters" class="box">
 							<a href="#" title="Home">
 								<div id="3hs_container" class="hs_container">
 									<div class="hs_area hs_area1">
 										<img class="hs_visible img-responsive" src="images/album-4/area1/1.jpg">
 										<img class="img-responsive" src="images/album-4/area1/2.jpg">
-										<img class="img-responsive" src="images/album-4/area1/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-4/area1/3.jpg">
+									</div>
 									<div class="hs_area hs_area2">
 										<img class="hs_visible img-responsive" src="images/album-4/area2/1.jpg">
 										<img class="img-responsive" src="images/album-4/area2/2.jpg">
-										<img class="img-responsive" src="images/album-4/area2/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-4/area2/3.jpg">
+									</div>
 									<div class="hs_area hs_area3">
 										<img class="hs_visible img-responsive" src="images/album-4/area3/1.jpg">
 										<img class="img-responsive" src="images/album-4/area3/2.jpg">
-										<img class="img-responsive" src="images/album-4/area3/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-4/area3/3.jpg">
+									</div>
 									<div class="hs_area hs_area4">
 										<img class="hs_visible img-responsive" src="images/album-4/area4/1.jpg">
 										<img class="img-responsive" src="images/album-4/area4/2.jpg">
-										<img class="img-responsive" src="images/album-4/area4/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-4/area4/3.jpg">
+									</div>
 								</div>
 							</a>
 						</div>
-						<div id="box3" class="box">
-							<!--<p><h1 style="text-align:right;margin-left:345px;" class="ima">Album5</h1></p>-->
+						<div id="Street" class="box">
 							<a href="#" title="Home">
 								<div id="4hs_container" class="hs_container">
 									<div class="hs_area hs_area1">
 										<img class="hs_visible img-responsive" src="images/album-5/area1/1.jpg">
 										<img class="img-responsive" src="images/album-5/area1/2.jpg">
-										<img class="img-responsive" src="images/album-5/area1/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-5/area1/3.jpg">
+									</div>
 									<div class="hs_area hs_area2">
 										<img class="hs_visible img-responsive" src="images/album-5/area2/1.jpg">
 										<img class="img-responsive" src="images/album-5/area2/2.jpg">
-										<img class="img-responsive" src="images/album-5/area2/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-5/area2/3.jpg">
+									</div>
 									<div class="hs_area hs_area3">
 										<img class="hs_visible img-responsive" src="images/album-5/area3/1.jpg">
 										<img class="img-responsive" src="images/album-5/area3/2.jpg">
-										<img class="img-responsive" src="images/album-5/area3/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-5/area3/3.jpg">
+									</div>
 									<div class="hs_area hs_area4">
 										<img class="hs_visible img-responsive" src="images/album-5/area4/1.jpg">
 										<img class="img-responsive" src="images/album-5/area4/2.jpg">
-										<img class="img-responsive" src="images/album-5/area4/3.jpg">									</div>
+										<img class="img-responsive" src="images/album-5/area4/3.jpg">
+									</div>
 								</div>
 							</a>
 						</div>
-						</div>
-</main>
-		</div>
-		<div id="bgImgWrapper">
-				<img id="bgImg" src="" style="width:100%;">
+					</div>
+			</main>
 		</div>
 	</body>
 </html>
