@@ -8,11 +8,13 @@ var easeType		= 'swing';
 //the speed of each transition
 var animSpeed		= 800;
 //caching
-var $hs_container	= $('#hs_container');
-var $hs_areas		= $hs_container.find('.hs_area');
+var s_container	= $('.hs_container');
+s_container.each(function(i){
+  var $hs_container = s_container[i];
+var $hs_areas		= $($hs_container).find('.hs_area');
 
 //first preload all images
-    $hs_images          = $hs_container.find('img');
+    $hs_images          = $($hs_container).find('img');
     var total_images    = $hs_images.length;
     var cnt             = 0;
     $hs_images.each(function(){
@@ -203,12 +205,12 @@ var $hs_areas		= $hs_container.find('.hs_area');
   //when clicking the hs_container all areas get slided
   //(just for fun...you would probably want to enter the site
   //or something similar)
-  $hs_container.bind('click',function(){
+  $($hs_container).bind('click',function(){
     $hs_areas.trigger('mouseenter');
   });
 }
 }).attr('src',$this.attr('src'));
 });
 
-
+});
 });
